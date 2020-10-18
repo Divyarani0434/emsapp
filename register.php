@@ -21,19 +21,19 @@
             <div class="card-title">
               <h4>Register</h4>
               <p class="card-text small text-muted">Register with your Email</p>
-              <form>
+              <form action="" method="POST">
                 <div class="mb-3">
-                    <input type="email" class="form-control form-control-sm" placeholder="Email"required>
+                    <input type="email" class="form-control form-control-sm" name="u_email" placeholder="Email"required>
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control form-control-sm" placeholder="Username" required>
+                  <input type="text" class="form-control form-control-sm" name="u_name" placeholder="Username" required>
                 </div>
                 <div class="mb-3">
-                  <input type="password" class="form-control form-control-sm" placeholder="Password"required>
+                  <input type="password" class="form-control form-control-sm" name="u_pass" placeholder="Password"required>
                 </div>
                 <div class="mb-3">
-                  <!-- <input href="dashboard.html" type="submit" class="btn btn-sm btn-success btn-block" value="Sign in"> -->
-                  <a href="index.html" class="btn btn-sm btn-success btn-block">Register</a>
+                  <input type="submit" class="btn btn-sm btn-success btn-block" name="u_reg" value="Register">
+                  <!-- <a href="index.html" class="btn btn-sm btn-success btn-block">Register</a> -->
                 </div>
                 <div class="mb-3">
                     <!-- <input href="dashboard.html" type="submit" class="btn btn-sm btn-success btn-block" value="Sign in"> -->
@@ -44,6 +44,14 @@
         </div>
       </div>
     </div>
+    <?php
+    if(isset($_POST['u_reg'])){
+        $u_email=$_POST['u_email'];
+        $u_name=$_POST['u_name'];
+        $u_pass=md5($_POST['u_pass']);
+        
+    }
+    ?>
     
   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
