@@ -19,26 +19,25 @@
           <div class="card card-border">
             <div class="card-body">
             <div class="card-title">
-              <h4>Register</h4>
-              <p class="card-text small text-muted">Register with your Email</p>
+              <h4>Login as Admin</h4>
+              <p class="card-text small text-muted">Login with your Username &amp; Password</p>
               <form>
-                <div class="mb-3">
-                    <input type="email" class="form-control form-control-sm" placeholder="Email"required>
-                </div>
                 <div class="mb-3">
                   <input type="text" class="form-control form-control-sm" placeholder="Username" required>
                 </div>
                 <div class="mb-3">
-                  <input type="password" class="form-control form-control-sm" placeholder="Password"required>
+                  <input type="text" class="form-control form-control-sm" placeholder="Password"required>
                 </div>
                 <div class="mb-3">
                   <!-- <input href="dashboard.html" type="submit" class="btn btn-sm btn-success btn-block" value="Sign in"> -->
-                  <a href="index.html" class="btn btn-sm btn-success btn-block">Register</a>
+                  <a href="dashboard.html" class="btn btn-sm btn-success btn-block">Log In</a>
                 </div>
                 <div class="mb-3">
-                    <!-- <input href="dashboard.html" type="submit" class="btn btn-sm btn-success btn-block" value="Sign in"> -->
-                    <a>Already have an account?</a><a href="index.html" class="btn btn-sm btn-info ml-3">Login</a>
-                  </div>
+                  <!-- <input href="dashboard.html" type="submit" class="btn btn-sm btn-success btn-block" value="Sign in"> -->
+                  <a>Don't have an account?</a><a href="register.html" class="btn btn-sm btn-info ml-3">Register</a>
+                </div>
+              </form>
+                
             </div>
          </div>
         </div>
